@@ -9,7 +9,7 @@ This repository contains a MATLAB-based 5G NR (TDD) network simulation framework
 The goal of this simulation framework is to study **5G NR mid-band coexistence with pulsed radar**, focusing on:
 - Symbol-level effects of interference (e.g., which OFDM symbols are most vulnerable)
 - Cross-layer consequences (PHY decoding → HARQ → goodput degradation)
-- Benchmarking baseline schedulers (RR / PF / Best-CQI) under interference
+- Benchmarking standard schedulers (RR / PF / Best-CQI) under interference
 - Generating high-fidelity logs suitable for later ML/GNN-based spectrum management work
 
 ---
