@@ -65,6 +65,8 @@ def plot_training_curves(
             if os.path.exists(path):
                 with open(path) as f:
                     h = json.load(f)
+                if "test_acc" not in h:
+                    continue
                 epochs = range(1, len(h["test_acc"]) + 1)
                 ax.plot(epochs, h["test_acc"], label=name)
     ax.set_xlabel("Epoch")
